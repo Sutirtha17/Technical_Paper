@@ -32,7 +32,7 @@
 # CSS GRID
 ## _What is a CSS Grid_
 
-**`A CSS grid`** can be described as a two-dimensional figure, consisting of rows and columns. **`A CSS grid`** layout divides a webpage into different parts or regions. The grid system is flexible in terms of designing, it makes the designing of web pages easy without using position and float properties.
+A **`CSS grid`** can be described as a two-dimensional figure, consisting of rows and columns.**`CSS grid`** layout divides a webpage into different parts or regions. The grid system is flexible in terms of designing, it makes the designing of web pages easy without using position and float properties.
 
 It allows users to arrange items into rows and columns in the same way that a table does. In comparison to tables, however, the **` CSS Grid`** makes designing layouts much easier. Using the grid-template-rows and grid-template-columns attributes, we can specify columns and rows on the grid.
 ## _Supported Browsers_
@@ -59,69 +59,78 @@ Grid items are grid items that are placed inside rows and columns of a grid cont
 ## _Display Property_
 An HTML element becomes a grid container when its display property is set to grid or inline-grid.
 ```sh
-.container {
+.container 
+  {
     display: grid;
-}
+  }
 ```
 or 
 ```sh
-.container {
+.container 
+  {
     display: inline-grid;
-}
+  }
 ```
 ## _Adjusting Rows and Columns_
 we can adjust gaps between rows and columns using the properties grid-column-gap and grid-row-gap
 ```sh
-.container {
+.container 
+  {
     display: grid;
     grid-column-gap: 50px;
-}
+  }
 ```
 ```sh
-.container {
+.container 
+  {
     display: grid;
     grid-rows-gap: 50px;
-}
+  }
 ```
 There is a shorthand property called grid-gap which we can use to specify the gaps between columns and rows togather in one go.
 ```sh
-.container {
+.container   
+  {
     display: grid;
     grid-gap: 50px 100px;
-}
+  }
 ```
 This property will set the grid-row-gap to 50px and grid-column-gap to 100px.
 ## _Grid template Properties_
 The grid-template-columns property specifies the number of columns and the width of each column in your grid layout.
 The value is a space-separated list, with each value defining the width of the column it belongs to.
 ```sh
-.container {
+.container 
+  {
     display: grid;
     grid-template-columns: auto auto;
-}
+  }
 ```
 The above code will create two columns with equal width, since "auto" is set. Similarly,
 ```sh
-.container {
+.container  
+  {
     display: grid;
     grid-template-columns: 20px 30px 100px;
-}
+  }
 ```
 Here three columns of width 20px, 30px and 100px will be created as mentioned in above.
 The grid-template-rows property specifies the number of rows and the width of each rows in your grid layout.
 ```sh
-.container {
+.container 
+  {
     display: grid;
     grid-template-columns: 20px 30px 100px;
-}
+  }
 ```
 Here three columns of width 20px, 30px and 100px will be created as mentioned above.
 
 ```sh
-.container {
+.container 
+  {
     display: grid;
     grid-template-columns: 20px 30px 100px;
-}
+  } 
 ```
 Here three rows of width 20px, 30px and 100px will be created as 
 mentioned above.
@@ -158,13 +167,14 @@ To start using the flexbox, we need to first define a flex container. We can add
 ```
 The flex container becomes flexible by setting the display property to flex:
 ```sh
-.container-flex {
+.container-flex 
+  {
     display: flex;
-}
+  }
 ```
 ## _Flexbox Container Properties_
 The Flex container properties are:
-- **`flex-direction**
+- **`flex-direction`**
 
   - flex-direction property is used to define in which direction the flex items will be stacked in the container. It has four direction options- row, row-reverse, column, and column reverse.
 
@@ -187,18 +197,22 @@ The Flex container properties are:
     }
 ```
 This property will set the **`flex-direction: row;`** and **`flex-wrap: wrap;`**
-- **`justify-content**
+- **`justify-content`**
   - justify-content property is used to align items with respect to the main axis.
-    - **`justify-content: center;`** will align the items at the center of the container.
-    - **`justify-content: flex-start;`** will align the items from the starting of the container.
-    - **`justify-content: flex-end;`** will align the items from the end of the container.
-     
-- **`align-items**
-  - align-items property defines how the alignment should be along the cross axis.
-    - **`align-item: stretch;`** This will stretch the items for filling the entire space.
-    - **`align-item: flex-start**  This property will stack the items from start.
+    - **`justify-content: center;`** This will align the items at the center of the container.
 
-    - **`align-item: flex-end;`** will align the items from the end of the container.
+    - **`justify-content: flex-start;`** This will align the items from the beginning to the end of the container.
+
+    - **`justify-content: flex-end;`** This property will align the items from the end to the beginning of the container.
+     
+- **`align-items`**
+  - align-items property defines how the alignment should be along the cross axis.
+    - **`align-item: stretch;`** This will stretch the items for filling the entire space of the container.
+
+    - **`align-item: flex-start;`**  This property will stack the items from start of the container.
+
+    - **`align-item: flex-end;`** This will align the items from the end of the container.
+
     - **`align-item: centre;`**
     This will align the items vertically in the central position of the container.
 
