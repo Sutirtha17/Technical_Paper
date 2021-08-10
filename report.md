@@ -2,7 +2,7 @@
 
 ![Image of CSS](https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png) -->
 <p align="center">
-  <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" alt="CSS Flexbox" title="CSS Flexbox" width="200" />
+  <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" width="200" />
 </p>
 
 # SHORT-REPORT ON CSS GRID AND FLEXBOX
@@ -12,30 +12,30 @@
 ## Topics
 
 <!--ts-->
-1. [CSS GRID](#CSS-GRID)
+- [CSS GRID](#CSS-GRID)
     - [What is a CSS Grid](#What-is-a-CSS-Grid)
-    - [Supported Browsers](#Supported-Browers)
+    - [Supported Browsers](#Supported-Browsers)
     - [Grid Elements](#Grid-Elements)
     - [Display Property](#Display-Property)
     - [Adjusting Rows and Columns](#Adjusting-Rows-and-Columns)
     - [Grid template Properties](#Grid-template-Properties)
 
-2. [CSS FLEXBOX](#CSS-FLEXBOX)
+- [CSS FLEXBOX](#CSS-FLEXBOX)
     - [What is a Flexbox](#What-is-a-Flexbox)
     - [Supported Browsers](#Supported-Browsers)
     - [Flexbox Container](#Flexbox-Container)
     - [Flexbox Container Properties](#Flexbox-Container-Properties)
-3. [Reference](#Reference)
+- [Reference](#Reference)
 <!--te-->
 
 
-# 1.CSS GRID
-## What is a CSS Grid
+# CSS GRID
+## _What is a CSS Grid_
 
 **`A CSS grid`** can be described as a two-dimensional figure, consisting of rows and columns. **`A CSS grid`** layout divides a webpage into different parts or regions. The grid system is flexible in terms of designing, it makes the designing of web pages easy without using position and float properties.
 
 It allows users to arrange items into rows and columns in the same way that a table does. In comparison to tables, however, the **` CSS Grid`** makes designing layouts much easier. Using the grid-template-rows and grid-template-columns attributes, we can specify columns and rows on the grid.
-## Supported Browsers
+## _Supported Browsers_
 The **` CSS Grid`** properties are supported by all modern browsers.
 
 - Google Chrome
@@ -43,7 +43,7 @@ The **` CSS Grid`** properties are supported by all modern browsers.
 - Internet Explorer
 - Safari
 - Opera
-## Grid Elements
+## _Grid Elements_
 A grid layout or structure is made of a parent element, which will have one or more child elements.
 
 The grid container can be defined by setting an element's display property to grid or inline-grid.
@@ -56,7 +56,7 @@ Grid items are grid items that are placed inside rows and columns of a grid cont
   <div class="item-grid">four</div> 
 </div>
 ```
-## Display Property
+## _Display Property_
 An HTML element becomes a grid container when its display property is set to grid or inline-grid.
 ```sh
 .container {
@@ -69,7 +69,7 @@ or
     display: inline-grid;
 }
 ```
-## Adjusting Rows and Columns
+## _Adjusting Rows and Columns_
 we can adjust gaps between rows and columns using the properties grid-column-gap and grid-row-gap
 ```sh
 .container {
@@ -91,7 +91,7 @@ There is a shorthand property called grid-gap which we can use to specify the ga
 }
 ```
 This property will set the grid-row-gap to 50px and grid-column-gap to 100px.
-## Grid template Properties
+## _Grid template Properties_
 The grid-template-columns property specifies the number of columns and the width of each column in your grid layout.
 The value is a space-separated list, with each value defining the width of the column it belongs to.
 ```sh
@@ -127,8 +127,8 @@ Here three rows of width 20px, 30px and 100px will be created as
 mentioned above.
 
 
-# 2. CSS FLEXBOX
-## What is a Flexbox
+# CSS FLEXBOX
+## _What is a Flexbox_
 The Flexible Box Module, often known as flexbox, was created as a one-dimensional layout model and a way for providing space distribution and powerful alignment capabilities between elements in an interface.
 
 There were four layout modes before the Flexbox Layout module:
@@ -138,7 +138,7 @@ There were four layout modes before the Flexbox Layout module:
 - Positioned, for the explicit position of an element
 
 The Flexible Box Layout Module simplifies the creation of flexible responsive layout structures without the use of floats or positioning.
-## Supported Browser
+## _Supported Browser_
 The **` CSS Grid`** properties are supported by all modern browsers.
 
 - Google Chrome
@@ -146,7 +146,7 @@ The **` CSS Grid`** properties are supported by all modern browsers.
 - Internet Explorer
 - Safari
 - Opera
-## Flexbox Container
+## _Flexbox Container_
 To start using the flexbox, we need to first define a flex container. We can add a flex container with several flex items as:
 ```sh
 <div class="container-flex">
@@ -162,7 +162,7 @@ The flex container becomes flexible by setting the display property to flex:
     display: flex;
 }
 ```
-## Flexbox Container Properties
+## _Flexbox Container Properties_
 The Flex container properties are:
 - **`flex-direction**
 
@@ -202,7 +202,7 @@ This property will set the **`flex-direction: row;`** and **`flex-wrap: wrap;`**
     - **`align-item: centre;`**
     This will align the items vertically in the central position of the container.
 
-# 3. Reference
+# Reference
 - https://www.w3schools.com/css/css_grid.asp
 - https://www.javatpoint.com/css-grid
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
