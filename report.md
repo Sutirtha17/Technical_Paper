@@ -11,21 +11,22 @@
 
 ## Topics
 
-
-
+<!--ts-->
 1. [CSS GRID](#CSS-GRID)
-    - [What is a CSS Grid](#What-is-a-CSS-Grids)
-    - [Supported Browsers](#ISupported-browers)
-    - [Grid Elements](#-Grid-Elements)
-    - [Display Property](#-Grid-Container)
-    - [Adjusting Rows and Columns](#Adjusting-Rows-and-Columnns)
+    - [What is a CSS Grid](#What-is-a-CSS-Grid)
+    - [Supported Browsers](#Supported-Browers)
+    - [Grid Elements](#Grid-Elements)
+    - [Display Property](#Display-Property)
+    - [Adjusting Rows and Columns](#Adjusting-Rows-and-Columns)
     - [Grid template Properties](#Grid-template-Properties)
 
 2. [CSS FLEXBOX](#CSS-FLEXBOX)
-    - [Supported Browsers](#ISupported-browers)
+    - [What is a Flexbox](#What-is-a-Flexbox)
+    - [Supported Browsers](#Supported-Browsers)
     - [Flexbox Container](#Flexbox-Container)
-    - [Flexbox Container Properties](#Flex-Container-Properties)
+    - [Flexbox Container Properties](#Flexbox-Container-Properties)
 3. [Reference](#Reference)
+<!--te-->
 
 
 # 1.CSS GRID
@@ -34,7 +35,7 @@
 **`A CSS grid`** can be described as a two-dimensional figure, consisting of rows and columns. **`A CSS grid`** layout divides a webpage into different parts or regions. The grid system is flexible in terms of designing, it makes the designing of web pages easy without using position and float properties.
 
 It allows users to arrange items into rows and columns in the same way that a table does. In comparison to tables, however, the **` CSS Grid`** makes designing layouts much easier. Using the grid-template-rows and grid-template-columns attributes, we can specify columns and rows on the grid.
-## Supported Browser
+## Supported Browsers
 The **` CSS Grid`** properties are supported by all modern browsers.
 
 - Google Chrome
@@ -90,7 +91,7 @@ There is a shorthand property called grid-gap which we can use to specify the ga
 }
 ```
 This property will set the grid-row-gap to 50px and grid-column-gap to 100px.
-## Grid-template Property
+## Grid template Properties
 The grid-template-columns property specifies the number of columns and the width of each column in your grid layout.
 The value is a space-separated list, with each value defining the width of the column it belongs to.
 ```sh
